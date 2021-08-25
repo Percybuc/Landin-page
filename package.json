@@ -1,0 +1,16 @@
+{
+  "name": "responsivedesign",
+  "version": "1.0.0",
+  "description": "Landing page responsive con HTML y CSS",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "responsive",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Percy Buendia <percybuendia97@gmail.com>",
+  "license": "MIT"
+}
