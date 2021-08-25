@@ -12,5 +12,13 @@
     "CSS"
   ],
   "author": "Percy Buendia <percybuendia97@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Percybuc/mobile-first_landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Percybuc/mobile-first_landing-page/issues"
+  },
+  "homepage": "https://github.com/Percybuc/mobile-first_landing-page#readme"
 }
