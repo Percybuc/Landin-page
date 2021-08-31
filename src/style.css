@@ -12,7 +12,8 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -285,7 +286,7 @@ main {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -325,4 +326,170 @@ main {
 }
 .product-detail--card .circle {
     background-image: url('./assets/icons/check-circle.svg');
+}
+
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--just-white);
+}
+
+/* ----------Estilos de las tarjetas de pago ------------ */
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding: 50px 0 70px 0;
+    text-align: center;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/* -----Scroll horizontal---- */
+.plans-container--slider {
+    display: flex;
+	overflow-x: scroll;
+	overscroll-behavior-x:contain;
+	scroll-snap-type: x proximity;
+    margin: 0 30px;
+}
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+.plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+/* ------------------- */
+.plans-container--card {
+    /* Solo para que el botón flotante tenga absolute */
+    position: relative;
+    /* Esto también para scrool horizontal */
+    scroll-snap-align:center;
+    width: 65%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 5px;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30, 0.16);
+}
+.recomended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px;
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan-card--price {
+    position: relative;
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+.plan-card--price span {
+    position: absolute;
+    height: 12px;
+    top: -10px;
+    left: calc(50% - 50px);
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* ESTA ES OTRA FORMA, pero el 99 no queda en el centro
+    vertical-align: 27px; */
+}
+.plan-card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    border: 2px solid var(--bitcoin-orange);
+    background-color: #faf8f7;
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-weight: 1.8rem;
+    color: var(--black);
+}
+.plan-card--ca span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
 }
