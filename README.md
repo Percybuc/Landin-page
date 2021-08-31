@@ -1,5 +1,11 @@
-# mobile-first_landing-
+## Landing-page
 
-#Maquetación de landing page 
-#Uso de HTML y CSS nativo
-#Metodología mobil first
+### Mobile first
+En este proyecto se utilizó la metodología mobile first para realizar una landing page apta para todo dispositivo.
+
+### Skills
+- Maquetación
+- HTML semántico
+- CSS, flexbox, BEM
+- Buenas prácticas de desarrollo
+- Accesibilidad
